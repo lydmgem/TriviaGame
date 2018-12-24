@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trivia Game</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="opener">
+                <h1>Random Trivia</h1>
+                <p id="timer">Timer: 30 seconds</p>
+                <button type="button" class="btn btn-secondary btn-lg">Let the fun begin!</button>
+            </div>
+
+            <div class="results">
+                <p id="tally"></p>
+            </div>
+
+        <div class="container">
+                  <div class="questions" id="question-one">
+                          <p>Where is the Statue of Liberty located?</p>
+                          <form class="options">
+                              <input class="option" type="radio" name="question1" answer="wrong">New Jersey<br>
+                              <input class="option" type="radio" name="question1" answer="wrong">Pennsylvania<br>
+                              <input class="option" type="radio" name="question1" answer="wrong">Connecticut<br>
+                              <input class="option" type="radio" name="question1" answer="correct">New York</br>
+                          </form>
+                        </div>
+      
+                      <div class ="questions" id="question-two">
+                              <p>What is the capital of the Philippines?</p>
+                              <form class="options">
+                                  <input class="option" type="radio" name="question2" answer="wrong">Luzon<br>
+                                  <input class="option" type="radio" name="question2" answer="correct">Manila<br>
+                                  <input class="option" type="radio" name="question2" answer="wrong">Boracay<br>
+                                  <input class="option" type="radio" name="question2" answer="wrong">Cebu</br>
+                              </form>
+                          </div>
+      
+                          <div class ="questions" id="question-three">
+                                  <p>When was Paul McCartney born?</p>
+                                  <form class="options">
+                                      <input class="option" type="radio" name="question3" answer="wrong">June 19, 1942<br>
+                                      <input class="option" type="radio" name="question3" answer="wrong">May 18, 1943<br>
+                                      <input class="option" type="radio" name="question3" answer="correct">June 18, 1942<br>
+                                      <input class="option" type="radio" name="question3" answer="wrong">December 18, 1942</br>
+                                  </form>
+                              </div>
+      
+                              <div class ="questions" id="question-four">
+                                      <p>What state borders California?</p>
+                                      <form class="options">
+                                          <input class="option" type="radio" name="question4" answer="wrong">Oregon<br>
+                                          <input class="option" type="radio" name="question4" answer="wrong">Arizona<br>
+                                          <input class="option" type="radio" name="question4" answer="wrong">Nevada<br>
+                                          <input class="option" type="radio" name="question4" answer="correct">All of the above</br>
+                                      </form>
+                                  </div>
+      
+                                  <div class ="questions" id="question-five">
+                                      <p>On the Gulf of Mexico, which state is nearest the end of the alphabet?</p>
+                                      <form class="options">
+                                          <input class="option" type="radio" name="question5" answer="wrong">Louisiana<br>
+                                          <input class="option" type="radio" name="question5" answer="correct">Texas<br>
+                                          <input class="option" type="radio" name="question5" answer="wrong">Tennessee<br>
+                                          <input class="option" type="radio" name="question5" answer="wrong">Florida</br>
+                                      </form>
+                                  </div>
+
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+      </div>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>

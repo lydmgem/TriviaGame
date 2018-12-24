@@ -1,0 +1,48 @@
+body, html {
+    background-image: url("../images/notebook.png");
+
+}
+
+input[type="radio"] {
+    margin: 0 10px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 20%;
+    margin: 20px auto;
+}
+
+.container {
+    padding-left: 30px;
+}
+
+.questions {
+    padding-top: 10px;
+    color: black;
+}
+
+.questions p {
+    color: grey;
+    font-family: 'Coming Soon', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.questions:last-child {
+    padding-bottom: 20px;
+}
+
+.options {
+    padding-left: 40%;
+}
+
+h1, #timer, .results {
+    font-family: 'Fredericka the Great', cursive;
+    color: navy;
+    font-size: 90px;
+}
+
+.opener, #tally {
+    text-align: center;
+}
