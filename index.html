@@ -16,70 +16,71 @@
 </head>
 <body>
     <div class="wrapper">
-            <div class="opener">
-                <h1>Random Trivia</h1>
-                <p id="timer">Timer: 30 seconds</p>
-                <button type="button" class="btn btn-secondary btn-lg">Let the fun begin!</button>
-            </div>
+        <div class="opener">
+        <h1>Random Trivia</h1>
+        <p id="timer">Timer: 30 seconds</p>
+        <button type="button" class="btn btn-secondary btn-lg">Let the fun begin!</button>
+        </div>
 
-            <div class="results">
-                <p id="tally"></p>
-            </div>
+        <div class="results">
+        <p id="tally"></p>
+        </div>
 
         <div class="container">
-                  <div class="questions" id="question-one">
-                          <p>Where is the Statue of Liberty located?</p>
-                          <form class="options">
-                              <input class="option" type="radio" name="question1" answer="wrong">New Jersey<br>
-                              <input class="option" type="radio" name="question1" answer="wrong">Pennsylvania<br>
-                              <input class="option" type="radio" name="question1" answer="wrong">Connecticut<br>
-                              <input class="option" type="radio" name="question1" answer="correct">New York</br>
-                          </form>
-                        </div>
-      
-                      <div class ="questions" id="question-two">
-                              <p>What is the capital of the Philippines?</p>
-                              <form class="options">
-                                  <input class="option" type="radio" name="question2" answer="wrong">Luzon<br>
-                                  <input class="option" type="radio" name="question2" answer="correct">Manila<br>
-                                  <input class="option" type="radio" name="question2" answer="wrong">Boracay<br>
-                                  <input class="option" type="radio" name="question2" answer="wrong">Cebu</br>
-                              </form>
-                          </div>
-      
-                          <div class ="questions" id="question-three">
-                                  <p>When was Paul McCartney born?</p>
-                                  <form class="options">
-                                      <input class="option" type="radio" name="question3" answer="wrong">June 19, 1942<br>
-                                      <input class="option" type="radio" name="question3" answer="wrong">May 18, 1943<br>
-                                      <input class="option" type="radio" name="question3" answer="correct">June 18, 1942<br>
-                                      <input class="option" type="radio" name="question3" answer="wrong">December 18, 1942</br>
-                                  </form>
-                              </div>
-      
-                              <div class ="questions" id="question-four">
-                                      <p>What state borders California?</p>
-                                      <form class="options">
-                                          <input class="option" type="radio" name="question4" answer="wrong">Oregon<br>
-                                          <input class="option" type="radio" name="question4" answer="wrong">Arizona<br>
-                                          <input class="option" type="radio" name="question4" answer="wrong">Nevada<br>
-                                          <input class="option" type="radio" name="question4" answer="correct">All of the above</br>
-                                      </form>
-                                  </div>
-      
-                                  <div class ="questions" id="question-five">
-                                      <p>On the Gulf of Mexico, which state is nearest the end of the alphabet?</p>
-                                      <form class="options">
-                                          <input class="option" type="radio" name="question5" answer="wrong">Louisiana<br>
-                                          <input class="option" type="radio" name="question5" answer="correct">Texas<br>
-                                          <input class="option" type="radio" name="question5" answer="wrong">Tennessee<br>
-                                          <input class="option" type="radio" name="question5" answer="wrong">Florida</br>
-                                      </form>
-                                  </div>
+            <div class="questions" id="question-one">
+            <p>Where is the Statue of Liberty located?</p>
+            <form class="options">
+            <input type="radio" name="question1" value="wrong">New Jersey<br>
+            <input type="radio" name="question1" value="wrong">Pennsylvania<br>
+            <input type="radio" name="question1" value="wrong">Connecticut<br>
+            <input type="radio" name="question1" value="correct1">New York</br>
+            </form>
+            </div>
 
-                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            <div class ="questions" id="question-two">
+            <p>What is the capital of the Philippines?</p>
+            <form class="options">
+            <input type="radio" name="question2" value="wrong">Luzon<br>
+            <input type="radio" name="question2" value="correct2">Manila<br>
+            <input type="radio" name="question2" value="wrong">Boracay<br>
+            <input type="radio" name="question2" value="wrong">Cebu</br>
+            </form>
+            </div>
+
+            <div class ="questions" id="question-three">
+            <p>When was Paul McCartney born?</p>
+            <form class="options">
+            <input type="radio" name="question3" value="wrong">June 19, 1942<br>
+            <input type="radio" name="question3" value="wrong">May 18, 1943<br>
+            <input type="radio" name="question3" value="correct3">June 18, 1942<br>
+            <input type="radio" name="question3" value="wrong">December 18, 1942</br>
+            </form>
+            </div>
+
+            <div class ="questions" id="question-four">
+            <p>What state borders California?</p>
+            <form class="options">
+            <input type="radio" name="question4" value="wrong">Oregon<br>
+            <input type="radio" name="question4" value="wrong">Arizona<br>
+            <input type="radio" name="question4" value="wrong">Nevada<br>
+            <input type="radio" name="question4" value="correct4">All of the above</br>
+            </form>
+            </div>
+
+            <div class ="questions" id="question-five">
+            <p>On the Gulf of Mexico, which state is nearest the end of the alphabet?</p>
+            <form class="options">
+            <input type="radio" name="question5" value="wrong">Louisiana<br>
+            <input type="radio" name="question5" value="correct5">Texas<br>
+            <input type="radio" name="question5" value="wrong">Tennessee<br>
+            <input type="radio" name="question5" value="wrong">Florida</br>
+            </form>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
         </div>
-      </div>
+    </div>
+    <!-- JS File -->
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>

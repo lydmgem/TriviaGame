@@ -3,6 +3,7 @@ $(document).ready(function() {
     
     //--Variables--
     var score = 0;
+    var incorrect = 0;
     var time = 30;
     var intervalId;
     
@@ -43,32 +44,69 @@ $(document).ready(function() {
     });
 
     //--Answering Questions function--
-$("input[type='radio']").click(function(){
-    //--Make sure that these values have all be selected via radio selection--
-    var radioValue = $("input[answer='correct']:checked").val();
-    
-    //***There is a bug here, after I select the correct one the first time, any answers chosen on the next questions becomes correct even if they are wrong***
-    if (radioValue)  {
-        console.log("Correct");
-        score++;
-    }
+    $("input[name=question1]:radio").click(function () {
+            if ($('input[name=question1]:checked').val() == "correct1") {
+                score++;
+                console.log("Correct");
+            } else {
+                incorrect++;
+                console.log("Wrong")
+            }});
 
-});
+    $("input[name=question2]:radio").click(function () {
+        if ($('input[name=question2]:checked').val() == "correct2") {
+            score++;
+            console.log("Correct");
+        } else {
+            incorrect++;
+            console.log("Wrong");
+        }});
 
-//--After clicking the submit button, show the results--
-$("button[type='submit'").on("click", function(){
-    $(".container").hide();
-    $("#timer").hide()
-    $("button[type='submit']").hide();
-    $(".results").show();
-    
-    if (score === 5) {
-        $(".opener").hide();
-        $("#tally").html("Congratulations, you got them all correct!").fadeIn("slow");
-    } else {
-        $("#tally").html("Your score is: " + score);
-    }
-});
+    $("input[name=question3]:radio").click(function () {
+        if ($('input[name=question3]:checked').val() == "correct3") {
+            score++;
+            console.log("Correct");
+        } else {
+            incorrect++;
+            console.log("Wrong");
+        }});
+
+    $("input[name=question4]:radio").click(function () {
+        if ($('input[name=question4]:checked').val() == "correct4") {
+            score++;
+            console.log("Correct");
+        } else {
+            incorrect++;
+            console.log("Wrong");
+        }});
+
+    $("input[name=question5]:radio").click(function () {
+        if ($('input[name=question5]:checked').val() == "correct5") {
+            score++;
+            console.log("Correct");
+        } else {
+            incorrect++;
+            console.log("Wrong");
+        }});
+
+    //--After clicking the submit button, show the results--
+    $("button[type='submit'").on("click", function(){
+        $(".container").hide();
+        $("#timer").hide()
+        $("button[type='submit']").hide();
+        $(".results").show();
+        
+        if (score === 5) {
+            $(".opener").hide();
+            $("#tally").html("Congratulations, you got them all correct!").fadeIn("slow");
+        } else if (score === 0) {
+            $("#tally").html("You did not get any of them right, try again!");
+        } else {
+            $("#tally").html("Your score is: " + score);
+            $("#tally").append("<BR>" + "You got " + incorrect + " wrong");
+
+        }
+    });
 
 
 
